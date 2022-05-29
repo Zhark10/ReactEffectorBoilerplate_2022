@@ -5,6 +5,7 @@ import {CONSTANTS} from '../../configs/constants';
 import {browserHistory, ROUTES} from '../../configs/navigation';
 import {TAuthRequest, TAuthResponse} from './types';
 import * as http from "../../configs/http";
+import { ProfileEntity } from '../profile/entity';
 
 export const AuthWatchers = {
   saveToken: (token: Store<string>) => {
@@ -21,6 +22,7 @@ export const AuthWatchers = {
   },
   actionsAfterLogin: (authFx: Effect<TAuthRequest, TAuthResponse, Error>) => {
     authFx.done.watch(() => {
+      ProfileEntity.events.profileGet()
       browserHistory.push(ROUTES.private.profile);
     });
   },

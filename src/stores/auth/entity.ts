@@ -12,8 +12,7 @@ const logoutClicked = AuthDomain.createEvent();
 const authFx = AuthDomain.createEffect(AuthApi.signIn);
 
 const $auth = AuthDomain.createStore<TAuthResponse>({
-  token: { id: '' }, 
-  profile: null
+  token: { id: "" }
 })
   .reset(logoutClicked)
   .on(authFx.doneData, (_, data) => data)

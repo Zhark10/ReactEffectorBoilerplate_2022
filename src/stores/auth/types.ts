@@ -1,5 +1,3 @@
-import { TProfile } from "../profile/types";
-
 export type TAuthRequest = {
   login: string
   password: string
@@ -7,7 +5,6 @@ export type TAuthRequest = {
 
 export type TAuthResponse = {
   token: TToken;
-  profile: TProfile | null;
 }
 
 export type TToken = {

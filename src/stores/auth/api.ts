@@ -4,18 +4,16 @@ import {TAuthRequest, TAuthResponse} from "./types"
 
 const URL = '/auth';
 
-// const signIn = ({ login, password }: TAuthRequest) => {
-//   return http.post<
-//     TAuthRequest,
-//     AxiosResponse<TAuthResponse, TAuthRequest>
-//   >(URL, { login, password }).then(response => response.data)
-// };
-
 const signIn = ({ login, password }: TAuthRequest) => {
-  return http.get<
+  return http.post<
     TAuthRequest,
     AxiosResponse<TAuthResponse, TAuthRequest>
-  >(URL).then(response => response.data)
+  >(URL, { login, password }).then(response => {
+    console.log('response.data', response.data)
+    return {
+      token: { id: "SMTH_TOKEN_STRING" }
+    }
+  })
 };
 
 export const AuthApi = {
