@@ -1,16 +1,13 @@
 {
   "auth": {
-    "data": {
-      "token": {
-        "id": "SMTH_TOKEN_STRING"
-      },
-      "profile": {
-        "id": 1,
-        "firstName": "Arkady",
-        "secondName": "Zharavin",
-        "age": 27,
-        "description": "i`m programmer"
-      }
-    }
+    "login": "3453546",
+    "password": "56745674567"
+  },
+  "profile": {
+    "id": 1,
+    "firstName": "Arkady",
+    "secondName": "Zharavin",
+    "age": 27,
+    "description": "i`m programmer"
   }
 }
