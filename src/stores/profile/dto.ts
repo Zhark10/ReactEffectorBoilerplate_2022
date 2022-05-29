@@ -1,6 +1,6 @@
-import { TProfile } from "./types"
+import { TUser } from "./types"
 
-export const ProfileDTO = (data: TProfile) => {
+export const ProfileDTO = (data: TUser) => {
   // YOUR CUSTOM DTO LOGIC...
   return {
     ...data
