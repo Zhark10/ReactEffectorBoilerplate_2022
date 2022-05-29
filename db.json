@@ -5,7 +5,7 @@
         "id": "SMTH_TOKEN_STRING"
       },
       "profile": {
-        "id": "1",
+        "id": 1,
         "firstName": "Arkady",
         "secondName": "Zharavin",
         "age": 27,
