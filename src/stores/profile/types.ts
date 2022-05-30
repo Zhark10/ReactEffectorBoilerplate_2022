@@ -1,5 +1,10 @@
+export type TProfileRequest = {
+  user: TUser | null;
+  // settings: {...}
+}
+
 export type TProfileResponse = {
-  user: TUser;
+  user: TUser | null;
   // settings: {...}
 }
 
