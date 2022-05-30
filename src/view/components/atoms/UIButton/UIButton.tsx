@@ -9,6 +9,7 @@ type TUiButton = {
   type?: EButtonType;
   onClick: any;
   disabled?: boolean;
+  fullWidth?: boolean;
 }
 
 export enum EButtonType {
@@ -22,9 +23,9 @@ export enum EButtonColor {
   SECONDARY = "secondary",
 }
 
-export const UIButton: FC<TUiButton> = ({ text, onClick, color = EButtonColor.PRIMARY, type = EButtonType.CONTAINED }) => {
+export const UIButton: FC<TUiButton> = ({ text, fullWidth, onClick, color = EButtonColor.PRIMARY, type = EButtonType.CONTAINED }) => {
   return (
-    <StyledButton onClick={onClick} variant={type} color={color}>{text}</StyledButton>
+    <StyledButton onClick={onClick} variant={type} color={color} fullWidth={Boolean(fullWidth)}>{text}</StyledButton>
   )
 }
 

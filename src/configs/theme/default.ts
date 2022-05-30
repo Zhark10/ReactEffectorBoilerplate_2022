@@ -4,7 +4,7 @@ export const defaultTheme: ThemeOptions = {
   palette: {
     primary: {
       main: '#00a86b',
-      dark: '#007ba7',
+      dark: '#008f5b',
       light: '#faf0e6',
     },
     action: {
@@ -15,7 +15,7 @@ export const defaultTheme: ThemeOptions = {
     },
     text: {
       primary: '#00a86b',
-      secondary: '#007ba7',
+      secondary: '#008f5b',
     }
   },
 
