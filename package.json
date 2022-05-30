@@ -5,7 +5,7 @@
   "author": {
     "name": "Zharavin Arkady"
   },
-  "proxy": "http://127.0.0.1:8000",
+  "proxy": "http://localhost:8000",
   "dependencies": {
     "@emotion/react": "11.9.0",
     "@emotion/styled": "11.8.1",
