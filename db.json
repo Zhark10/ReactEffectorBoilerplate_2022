@@ -1,13 +1,15 @@
 {
   "auth": {
-    "login": "3453546",
-    "password": "56745674567"
+    "login": "dghdfgh",
+    "password": "nvbncvbn"
   },
   "profile": {
-    "id": 1,
-    "firstName": "Arkady",
-    "secondName": "Zharavin",
-    "age": 27,
-    "description": "i`m programmer"
+    "user": {
+      "id": 1,
+      "firstName": "Arkady",
+      "secondName": "Zharavin",
+      "age": 27,
+      "description": "i`m programmer"
+    }
   }
 }
